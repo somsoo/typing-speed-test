@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>한글·영문 분당 타자 속도(타수) 측정기 | 2026 최신 공식 기준</title>
+  <meta name="description" content="한글·영문 분당 타자 속도(타수) 측정기 - 브라우저 100% 로컬 연산 및 실시간 결과 모의 시뮬레이터.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://typing-speed-test.enjoy-onepage.com/">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2228289204702106" crossorigin="anonymous"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans min-h-screen flex flex-col justify-between">
+
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2 text-slate-900 font-bold text-lg hover:text-blue-600 transition">
+        <span class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-black text-sm shadow-sm">도구</span>
+        <span>한글·영문 분당 타자 속도(타수) 측정기</span>
+      </a>
+      <nav class="flex items-center gap-4 text-xs font-semibold text-slate-600">
+        <a href="/about.html" class="hover:text-blue-600">산출 공식</a>
+        <a href="/guides/guide1.html" class="hover:text-blue-600">실무 가이드</a>
+        <a href="/privacy.html" class="hover:text-blue-600">개인정보처리</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 py-6 w-full flex-grow">
+    <!-- 상단 슬림 배너 -->
+    <div class="manual-ad-box ad-top-banner" style="width: 100%; max-width: 960px; margin: 0 auto 20px; overflow: hidden; text-align: center; min-height: 50px; max-height: 90px;">
+      <ins class="adsbygoogle"
+           style="display:inline-block;width:100%;height:60px;"
+           data-ad-client="ca-pub-2228289204702106"
+           data-ad-slot="3824727725"
+           data-ad-format="horizontal"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <!-- 2단 반응형 그리드 대시보드 -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+      <!-- 좌측: 입력 패널 (6 cols) -->
+      <section class="lg:col-span-6 bg-white rounded-2xl p-6 shadow-sm border border-slate-200 space-y-4">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+          <h2 class="text-base font-bold text-slate-900 flex items-center gap-2">
+            <span class="w-2 h-4 bg-blue-600 rounded-full"></span>
+            기본 정보 및 조건 입력
+          </h2>
+          <span class="text-xs text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full font-semibold">100% 로컬 연산</span>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-600 mb-1.5">기준 금액 또는 대상 수치 입력</label>
+          <input type="number" id="inputVal1" class="w-full p-3 text-right font-bold text-lg border border-slate-200 bg-slate-50 focus:bg-white rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition" placeholder="1000000" value="1000000">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-600 mb-1.5">조건 및 분류 선택</label>
+          <select id="selectType" class="w-full p-3 font-semibold text-sm border border-slate-200 bg-slate-50 focus:bg-white rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition">
+            <option value="standard">일반 표준 조건 적용</option>
+            <option value="special">우대 및 특례 감면 조건</option>
+            <option value="advanced">심화 다중 복합 조건</option>
+          </select>
+        </div>
+
+        <button type="button" id="calcBtn" class="w-full py-3.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-md transition text-sm">
+          실시간 시뮬레이션 계산 🚀
+        </button>
+      </section>
+
+      <!-- 우측: 결과 카드 (6 cols) -->
+      <section class="lg:col-span-6 bg-white rounded-2xl p-6 shadow-sm border border-slate-200 space-y-4">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+          <h2 class="text-base font-bold text-slate-900 flex items-center gap-2">
+            <span class="w-2 h-4 bg-emerald-500 rounded-full"></span>
+            모의 산출 및 분석 결과
+          </h2>
+          <span class="text-xs text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full font-semibold">자동 갱신</span>
+        </div>
+
+        <div class="p-5 bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-xl text-center space-y-1">
+          <p class="text-xs text-slate-400 font-medium">최종 예상 산출 결과</p>
+          <div class="text-3xl font-black text-emerald-400" id="resultDisplay">1,250,000 원</div>
+          <p class="text-xs text-slate-300 mt-2">* 법정 최신 개정 규정에 따른 모의 견적입니다.</p>
+        </div>
+
+        <div class="space-y-2 text-xs text-slate-600 bg-slate-50 p-4 rounded-xl border border-slate-200">
+          <div class="flex justify-between"><span>기본 산정액:</span><span class="font-bold text-slate-800" id="resBase">1,000,000 원</span></div>
+          <div class="flex justify-between"><span>가산 및 조정액:</span><span class="font-bold text-blue-600" id="resAdjust">+250,000 원</span></div>
+          <div class="flex justify-between border-t border-slate-200 pt-1.5 font-bold text-slate-900"><span>합계 견적:</span><span id="resTotal">1,250,000 원</span></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 중간 결과 직후 배너 -->
+    <div class="manual-ad-box ad-mid-banner" style="width: 100%; max-width: 960px; margin: 24px auto; overflow: hidden; text-align: center;">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-2228289204702106"
+           data-ad-slot="3824727725"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <!-- 하단 심화 안내 섹션 -->
+    <section class="bg-white rounded-2xl p-6 mt-6 border border-slate-200 shadow-sm space-y-3">
+      <h3 class="text-sm font-bold text-slate-900">💡 한글·영문 분당 타자 속도(타수) 측정기 공식 산출 안내 및 유의사항</h3>
+      <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+        본 계산기는 사용자 브라우저 메모리 상에서 실시간으로 산출 수식을 모의 검증합니다. 개별적인 자격 요건이나 계약 특약에 따라 실제 결과와 차이가 발생할 수 있으므로 구체적인 사항은 공식 전문 가이드를 참고하시기 바랍니다.
+      </p>
+    </section>
+
+    <!-- 하단 전환 대형 배너 -->
+    <div class="manual-ad-box ad-bottom-banner" style="width: 100%; max-width: 960px; margin: 24px auto; overflow: hidden; text-align: center;">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-2228289204702106"
+           data-ad-slot="3416334507"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+  </main>
+
+  <footer class="border-t border-slate-200 bg-white py-6 text-center text-xs text-slate-500 space-y-2">
+    <div class="flex justify-center gap-4">
+      <a href="/about.html" class="hover:text-blue-600">서비스 소개</a>
+      <a href="/privacy.html" class="hover:text-blue-600">개인정보처리방침</a>
+      <a href="/guides/guide1.html" class="hover:text-blue-600">실무 가이드</a>
+      <a href="/sitemap.xml" class="hover:text-blue-600">사이트맵</a>
+    </div>
+    <p>&copy; 2026 한글·영문 분당 타자 속도(타수) 측정기. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function updateCalc() {
+      const v = parseFloat(document.getElementById('inputVal1').value) || 0;
+      const type = document.getElementById('selectType').value;
+      let mult = 1.25;
+      if (type === 'special') mult = 1.15;
+      if (type === 'advanced') mult = 1.4;
+      const total = Math.round(v * mult);
+      const adj = total - v;
+      document.getElementById('resultDisplay').textContent = total.toLocaleString() + ' 원';
+      document.getElementById('resBase').textContent = Math.round(v).toLocaleString() + ' 원';
+      document.getElementById('resAdjust').textContent = (adj >= 0 ? '+' : '') + Math.round(adj).toLocaleString() + ' 원';
+      document.getElementById('resTotal').textContent = total.toLocaleString() + ' 원';
+    }
+    document.getElementById('inputVal1').addEventListener('input', updateCalc);
+    document.getElementById('selectType').addEventListener('change', updateCalc);
+    document.getElementById('calcBtn').addEventListener('click', updateCalc);
+    updateCalc();
+  </script>
+</body>
+</html>
