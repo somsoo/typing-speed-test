@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://typing-speed-test.enjoy-onepage.com/sitemap.xml
