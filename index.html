@@ -5,8 +5,8 @@
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "한글·영문 분당 타자 속도(타수) 측정기 | 2026 최신 공식 기준",
-    "description": "한글·영문 분당 타자 속도(타수) 측정기 - 브라우저 100% 로컬 연산 및 실시간 결과 모의 시뮬레이터.",
+    "name": "한글·영문 분당 타자 속도(타수/WPM) 측정기 | 실시간 타자 연습",
+    "description": "한글 초성/중성/종성 음소 분해 타수(CPM) 및 영문 단어(WPM) 실시간 측정. 정확도, 오타율, 소요시간 정밀 분석 무료 타자 검정기.",
     "url": "https://typing-speed-test.enjoy-onepage.com/",
     "applicationCategory": "UtilitiesApplication",
     "operatingSystem": "All",
@@ -20,14 +20,30 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>한글·영문 분당 타자 속도(타수) 측정기 | 2026 최신 공식 기준</title>
-  <meta name="description" content="한글·영문 분당 타자 속도(타수) 측정기 - 브라우저 100% 로컬 연산 및 실시간 결과 모의 시뮬레이터.">
+  <title>한글·영문 타자 속도(타수/WPM) 측정기 | 무료 타자 연습 & 속도 검정</title>
+  <meta name="description" content="한글 분당 타수(CPM)와 영문 WPM, 정확도(%)를 실시간 정밀 측정하세요. 명문장 타이핑과 오타 분석 리포트 제공.">
+  <meta name="keywords" content="타자 속도 측정, 타자 검정, 한글 타수 계산, 영문 WPM 측정, 타자 연습, 한글 타자 테스트">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://typing-speed-test.enjoy-onepage.com/">
+  
+  <!-- Open Graph / SNS -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://typing-speed-test.enjoy-onepage.com/">
+  <meta property="og:title" content="한글·영문 타자 속도(타수/WPM) 측정기">
+  <meta property="og:description" content="내 타자 속도는 몇 타일까? 실시간 타수(CPM), WPM, 정확도 무료 측정!">
+  <meta property="og:image" content="https://typing-speed-test.enjoy-onepage.com/og-image.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://typing-speed-test.enjoy-onepage.com/">
+  <meta property="twitter:title" content="한글·영문 타자 속도(타수/WPM) 측정기">
+  <meta property="twitter:description" content="내 타자 속도는 몇 타일까? 실시간 타수(CPM), WPM, 정확도 무료 측정!">
+  <meta property="twitter:image" content="https://typing-speed-test.enjoy-onepage.com/og-image.png">
+
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <script src="https://cdn.tailwindcss.com"></script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2228289204702106" crossorigin="anonymous"></script>
-  <link rel="alternate" type="application/rss+xml" title="한글·영문 분당 타자 속도(타수) 측정기 | 2026 최신 공식 기준 RSS Feed" href="https://typing-speed-test.enjoy-onepage.com/rss.xml" />
+  <link rel="alternate" type="application/rss+xml" title="한글·영문 분당 타자 속도 측정기 RSS Feed" href="https://typing-speed-test.enjoy-onepage.com/rss.xml" />
   <link rel="sitemap" type="application/xml" title="Sitemap" href="https://typing-speed-test.enjoy-onepage.com/sitemap.xml" />
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased font-sans min-h-screen flex flex-col justify-between">
@@ -35,18 +51,23 @@
   <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
     <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
       <a href="/" class="flex items-center gap-2 text-slate-900 font-bold text-lg hover:text-blue-600 transition">
-        <span class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-black text-sm shadow-sm">도구</span>
-        <span>한글·영문 분당 타자 속도(타수) 측정기</span>
+        <span class="w-8 h-8 rounded-lg bg-indigo-600 text-white flex items-center justify-center font-black text-sm shadow-sm">타자</span>
+        <span>타자 속도(타수) 실시간 측정기</span>
       </a>
       <nav class="flex items-center gap-4 text-xs font-semibold text-slate-600">
-        <a href="/about.html" class="hover:text-blue-600">산출 공식</a>
-        <a href="/guides/guide1.html" class="hover:text-blue-600">실무 가이드</a>
+        <a href="/about.html" class="hover:text-blue-600">산출 원리</a>
+        <a href="/guides/guide1.html" class="hover:text-blue-600">타자 향상 팁</a>
         <a href="/privacy.html" class="hover:text-blue-600">개인정보처리</a>
       </nav>
     </div>
   </header>
 
   <main class="max-w-5xl mx-auto px-4 py-6 w-full flex-grow">
+    <div class="mb-4">
+      <h1 class="text-xl sm:text-2xl font-black text-slate-900">한글·영문 분당 타자 속도(타수/WPM) 실시간 검정기</h1>
+      <p class="text-xs sm:text-sm text-slate-600 mt-1">한글 음소(초성·중성·종성) 분해 기반 정밀 분당 타수(CPM) 및 영문 분당 단어수(WPM), 정확도 실시간 계측</p>
+    </div>
+
     <!-- 상단 슬림 배너 -->
     <div class="manual-ad-box ad-top-banner" style="width: 100%; max-width: 960px; margin: 0 auto 20px; overflow: hidden; text-align: center; min-height: 50px; max-height: 90px;">
       <ins class="adsbygoogle"
@@ -60,56 +81,79 @@
 
     <!-- 2단 반응형 그리드 대시보드 -->
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-      <!-- 좌측: 입력 패널 (6 cols) -->
-      <section class="lg:col-span-6 bg-white rounded-2xl p-6 shadow-sm border border-slate-200 space-y-4">
+      <!-- 좌측: 타이핑 입력 패널 (7 cols) -->
+      <section class="lg:col-span-7 bg-white rounded-2xl p-6 shadow-sm border border-slate-200 space-y-4">
         <div class="flex items-center justify-between border-b border-slate-100 pb-3">
           <h2 class="text-base font-bold text-slate-900 flex items-center gap-2">
-            <span class="w-2 h-4 bg-blue-600 rounded-full"></span>
-            기본 정보 및 조건 입력
+            <span class="w-2 h-4 bg-indigo-600 rounded-full"></span>
+            타자 검정 및 연습장
           </h2>
-          <span class="text-xs text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full font-semibold">100% 로컬 연산</span>
+          <div class="flex gap-2">
+            <button type="button" id="langKoBtn" class="px-2.5 py-1 text-xs rounded-full font-bold bg-indigo-50 text-indigo-600 border border-indigo-200">한글 모드</button>
+            <button type="button" id="langEnBtn" class="px-2.5 py-1 text-xs rounded-full font-bold bg-slate-100 text-slate-600 border border-slate-200">영문 모드</button>
+          </div>
         </div>
 
+        <!-- 제시 문장 박스 -->
+        <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+          <div class="flex justify-between items-center text-xs text-slate-400">
+            <span>제시 문장:</span>
+            <button type="button" id="nextSentenceBtn" class="text-indigo-600 hover:text-indigo-800 font-bold flex items-center gap-1">
+              🔄 다른 문장 변경
+            </button>
+          </div>
+          <div id="targetSentence" class="text-base sm:text-lg font-bold text-slate-800 leading-relaxed select-none tracking-wide">
+            하늘과 바람과 별과 시
+          </div>
+        </div>
+
+        <!-- 사용자 입력 영역 -->
         <div>
-          <label class="block text-xs font-bold text-slate-600 mb-1.5">기준 금액 또는 대상 수치 입력</label>
-          <input type="number" id="inputVal1" class="w-full p-3 text-right font-bold text-lg border border-slate-200 bg-slate-50 focus:bg-white rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition" placeholder="1000000" value="1000000">
+          <label class="block text-xs font-bold text-slate-600 mb-1.5">아래 입력창을 클릭하고 위 문장을 그대로 입력하세요 (첫 타자 시 자동 시작)</label>
+          <textarea id="typingInput" rows="3" class="w-full p-3 font-semibold text-base sm:text-lg border-2 border-indigo-200 bg-white rounded-xl focus:border-indigo-600 outline-none transition resize-none leading-relaxed" placeholder="여기에 타이핑을 시작하세요..."></textarea>
         </div>
 
-        <div>
-          <label class="block text-xs font-bold text-slate-600 mb-1.5">조건 및 분류 선택</label>
-          <select id="selectType" class="w-full p-3 font-semibold text-sm border border-slate-200 bg-slate-50 focus:bg-white rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition">
-            <option value="standard">일반 표준 조건 적용</option>
-            <option value="special">우대 및 특례 감면 조건</option>
-            <option value="advanced">심화 다중 복합 조건</option>
-          </select>
+        <!-- 컨트롤 버튼 -->
+        <div class="flex gap-2">
+          <button type="button" id="resetBtn" class="flex-1 py-3 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-xl text-xs transition">
+            다시 시작 (초기화)
+          </button>
+          <button type="button" id="finishBtn" class="flex-1 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl text-xs shadow-md transition">
+            검정 완료 (결과 확정) 🚀
+          </button>
         </div>
-
-        <button type="button" id="calcBtn" class="w-full py-3.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-md transition text-sm">
-          실시간 시뮬레이션 계산 🚀
-        </button>
       </section>
 
-      <!-- 우측: 결과 카드 (6 cols) -->
-      <section class="lg:col-span-6 bg-white rounded-2xl p-6 shadow-sm border border-slate-200 space-y-4">
+      <!-- 우측: 실시간 계측 결과 카드 (5 cols) -->
+      <section class="lg:col-span-5 bg-white rounded-2xl p-6 shadow-sm border border-slate-200 space-y-4">
         <div class="flex items-center justify-between border-b border-slate-100 pb-3">
           <h2 class="text-base font-bold text-slate-900 flex items-center gap-2">
             <span class="w-2 h-4 bg-emerald-500 rounded-full"></span>
-            모의 산출 및 분석 결과
+            실시간 속도 및 정확도
           </h2>
-          <span class="text-xs text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full font-semibold">자동 갱신</span>
+          <span class="text-xs text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full font-semibold" id="timerBadge">대기 중</span>
         </div>
 
         <div class="p-5 bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-xl text-center space-y-1">
-          <p class="text-xs text-slate-400 font-medium">최종 예상 산출 결과</p>
-          <div class="text-3xl font-black text-emerald-400" id="resultDisplay">1,250,000 원</div>
-          <p class="text-xs text-slate-300 mt-2">* 법정 최신 개정 규정에 따른 모의 견적입니다.</p>
+          <p class="text-xs text-slate-400 font-medium">현재 분당 타자 속도 (CPM)</p>
+          <div class="text-4xl font-black text-emerald-400" id="resCPM">0 타 / 분</div>
+          <p class="text-xs text-slate-300 mt-2" id="resSpeedLevel">타이핑을 시작하면 실시간 측정됩니다.</p>
         </div>
 
         <div class="space-y-2 text-xs text-slate-600 bg-slate-50 p-4 rounded-xl border border-slate-200">
-          <div class="flex justify-between"><span>기본 산정액:</span><span class="font-bold text-slate-800" id="resBase">1,000,000 원</span></div>
-          <div class="flex justify-between"><span>가산 및 조정액:</span><span class="font-bold text-blue-600" id="resAdjust">+250,000 원</span></div>
-          <div class="flex justify-between border-t border-slate-200 pt-1.5 font-bold text-slate-900"><span>합계 견적:</span><span id="resTotal">1,250,000 원</span></div>
+          <div class="flex justify-between"><span>영문 속도 (WPM):</span><span class="font-bold text-slate-800" id="resWPM">0 WPM</span></div>
+          <div class="flex justify-between"><span>정확도:</span><span class="font-bold text-blue-600" id="resAccuracy">100.0 %</span></div>
+          <div class="flex justify-between"><span>오타 수:</span><span class="font-bold text-rose-600" id="resErrorCount">0 자</span></div>
+          <div class="flex justify-between"><span>총 입력 음소/타수:</span><span class="font-bold text-slate-700" id="resTotalKeystrokes">0 타</span></div>
+          <div class="flex justify-between border-t border-slate-200 pt-1.5 font-bold text-slate-900">
+            <span>측정 경과 시간:</span>
+            <span class="text-indigo-600" id="resElapsedTime">0.0 초</span>
+          </div>
         </div>
+
+        <button type="button" onclick="copyResultToClipboard()" class="w-full py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-xl text-xs transition flex items-center justify-center gap-2">
+          <span>📋</span> 타자 검정 성적표 복사하기
+        </button>
       </section>
     </div>
 
@@ -124,11 +168,33 @@
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
 
-    <!-- 하단 심화 안내 섹션 -->
-    <section class="bg-white rounded-2xl p-6 mt-6 border border-slate-200 shadow-sm space-y-3">
-      <h3 class="text-sm font-bold text-slate-900">💡 한글·영문 분당 타자 속도(타수) 측정기 공식 산출 안내 및 유의사항</h3>
-      <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-        본 계산기는 사용자 브라우저 메모리 상에서 실시간으로 산출 수식을 모의 검증합니다. 개별적인 자격 요건이나 계약 특약에 따라 실제 결과와 차이가 발생할 수 있으므로 구체적인 사항은 공식 전문 가이드를 참고하시기 바랍니다.
+    <!-- 타자 등급 안내표 -->
+    <section class="bg-white rounded-2xl p-6 mt-6 border border-slate-200 shadow-sm space-y-4">
+      <h3 class="text-sm font-bold text-slate-900 flex items-center gap-2">
+        <span>🏆</span> 분당 타자 속도(타수) 등급 기준표
+      </h3>
+      <div class="overflow-x-auto">
+        <table class="w-full text-xs text-left border-collapse">
+          <thead>
+            <tr class="bg-slate-100 text-slate-700 border-b border-slate-200">
+              <th class="p-2.5 font-bold">등급 구분</th>
+              <th class="p-2.5 font-bold">한글 타수(CPM)</th>
+              <th class="p-2.5 font-bold">영문 속도(WPM)</th>
+              <th class="p-2.5 font-bold">특징 및 실무 수준</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 text-slate-600">
+            <tr><td class="p-2.5 font-bold text-indigo-600">신(God)급</td><td class="p-2.5 font-bold">800타 이상</td><td class="p-2.5">140 WPM 이상</td><td class="p-2.5">전문 속기사 및 프로 타이피스트 수준</td></tr>
+            <tr><td class="p-2.5 font-bold text-blue-600">전문가급</td><td class="p-2.5 font-bold">500 ~ 799타</td><td class="p-2.5">90 ~ 139 WPM</td><td class="p-2.5">오타 없이 생각하는 속도로 자유로운 집필 가능</td></tr>
+            <tr><td class="p-2.5 font-bold text-emerald-600">능숙함</td><td class="p-2.5 font-bold">350 ~ 499타</td><td class="p-2.5">60 ~ 89 WPM</td><td class="p-2.5">일반 사무직 및 대학생 평균 이상 속도</td></tr>
+            <tr><td class="p-2.5 font-bold text-slate-800">보통</td><td class="p-2.5">200 ~ 349타</td><td class="p-2.5">35 ~ 59 WPM</td><td class="p-2.5">일상 업무 및 메신저 대화에 지장 없는 수준</td></tr>
+            <tr><td class="p-2.5 font-bold text-slate-500">초보</td><td class="p-2.5">200타 미만</td><td class="p-2.5">35 WPM 미만</td><td class="p-2.5">독수리 타법 탈출 및 자리 연습 권장</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-slate-500 leading-relaxed">
+        * 한글은 1글자당 초성·중성·종성(최대 3~4타)을 정확히 분해하여 실질 타수로 환산합니다.<br>
+        * 영문 1단어(WPM)는 국제 표준 5자 기준(5 Keystrokes)으로 공정하게 산정됩니다.
       </p>
     </section>
 
@@ -154,60 +220,256 @@
     <p>&copy; 2026 한글·영문 분당 타자 속도(타수) 측정기. All rights reserved.</p>
   </footer>
 
+  <!-- 100% 정밀 음소 분해 타자 측정 로직 -->
   <script>
-    function updateCalc() {
-      const v = parseFloat(document.getElementById('inputVal1').value) || 0;
-      const type = document.getElementById('selectType').value;
-      let mult = 1.25;
-      if (type === 'special') mult = 1.15;
-      if (type === 'advanced') mult = 1.4;
-      const total = Math.round(v * mult);
-      const adj = total - v;
-      document.getElementById('resultDisplay').textContent = total.toLocaleString() + ' 원';
-      document.getElementById('resBase').textContent = Math.round(v).toLocaleString() + ' 원';
-      document.getElementById('resAdjust').textContent = (adj >= 0 ? '+' : '') + Math.round(adj).toLocaleString() + ' 원';
-      document.getElementById('resTotal').textContent = total.toLocaleString() + ' 원';
+    // 한글 음소 분해용 상수 테이블
+    const KO_SENTENCES = [
+      "하늘을 우러러 한 점 부끄럼이 없기를 잎새에 이는 바람에도 나는 괴로워했다.",
+      "별을 노래하는 마음으로 모든 죽어가는 것을 사랑해야지 그리고 나한테 주어진 길을 걸어가야겠다.",
+      "나랏말싸미 듕귁에 달아 문자와로 서로 사맛디 아니할쎄 이런 젼차로 어린 백셩이 니르고져 홀 배 이셔도",
+      "사람이 온다는 건 실은 어마어마한 일이다. 그는 그의 과거와 현재와 그리고 그의 미래와 함께 오기 때문이다.",
+      "고요한 밤하늘에 수놓아진 수많은 별들은 저마다의 사연을 품고 반짝이고 있다.",
+      "성공은 매일 반복되는 작은 노력들의 합이다. 결코 포기하지 않는 자에게 기회가 찾아온다."
+    ];
+
+    const EN_SENTENCES = [
+      "The quick brown fox jumps over the lazy dog near the bank of the river.",
+      "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+      "In the middle of difficulty lies opportunity. Keep moving forward every single day.",
+      "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.",
+      "Happiness is not something readymade. It comes from your own actions and mindset."
+    ];
+
+    // 한글 분해 타수 계산
+    function countKoreanStrokes(str) {
+      let count = 0;
+      for (let i = 0; i < str.length; i++) {
+        const code = str.charCodeAt(i);
+        if (code >= 0xAC00 && code <= 0xD7A3) {
+          const syl = code - 0xAC00;
+          const cho = Math.floor(syl / 588);
+          const jung = Math.floor((syl % 588) / 28);
+          const jong = syl % 28;
+
+          // 초성 19개: ㄱ ㄲ(2) ㄴ ㄷ ㄸ(2) ㄹ ㅁ ㅂ ㅃ(2) ㅅ ㅆ(2) ㅇ ㅈ ㅉ(2) ㅊ ㅋ ㅌ ㅍ ㅎ
+          const choStrokes = [1, 2, 1, 1, 2, 1, 1, 1, 2, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1];
+          // 중성 21개: ㅏ ㅐ(2) ㅑ ㅒ(2) ㅓ ㅔ(2) ㅕ ㅖ(2) ㅗ ㅘ(2) ㅙ(3) ㅚ(2) ㅛ ㅜ ㅝ(2) ㅞ(3) ㅟ(2) ㅠ ㅡ ㅢ(2) ㅣ
+          const jungStrokes = [1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 3, 2, 1, 1, 2, 3, 2, 1, 1, 2, 1];
+          // 종성 28개: 없음(0), ㄱ, ㄲ(2), ㄳ(2), ㄴ, ㄵ(2), ㄶ(2), ㄷ, ㄹ, ㄺ(2), ㄻ(2), ㄼ(2), ㄽ(2), ㄾ(2), ㄿ(2), ㅀ(2), ㅁ, ㅂ, ㅄ(2), ㅅ, ㅆ(2), ㅇ, ㅈ, ㅊ, ㅋ, ㅌ, ㅍ, ㅎ
+          const jongStrokes = [0, 1, 2, 2, 1, 2, 2, 1, 1, 2, 2, 2, 2, 2, 2, 2, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 1];
+
+          count += (choStrokes[cho] !== undefined ? choStrokes[cho] : 1) + 
+                   (jungStrokes[jung] !== undefined ? jungStrokes[jung] : 1) + 
+                   (jongStrokes[jong] !== undefined ? jongStrokes[jong] : 0);
+        } else {
+          // 공백, 영문, 기호 등
+          count += 1;
+        }
+      }
+      return count;
     }
-    document.getElementById('inputVal1').addEventListener('input', updateCalc);
-    document.getElementById('selectType').addEventListener('change', updateCalc);
-    document.getElementById('calcBtn').addEventListener('click', updateCalc);
-    updateCalc();
+
+    let currentMode = 'ko';
+    let sentenceIndex = 0;
+    let startTime = null;
+    let timerInterval = null;
+    let isFinished = false;
+
+    const targetEl = document.getElementById('targetSentence');
+    const inputEl = document.getElementById('typingInput');
+    const timerBadgeEl = document.getElementById('timerBadge');
+
+    const resCPMel = document.getElementById('resCPM');
+    const resWPMel = document.getElementById('resWPM');
+    const resAccel = document.getElementById('resAccuracy');
+    const resErrorel = document.getElementById('resErrorCount');
+    const resStrokesel = document.getElementById('resTotalKeystrokes');
+    const resTimeel = document.getElementById('resElapsedTime');
+    const resLevelEl = document.getElementById('resSpeedLevel');
+
+    function loadSentence() {
+      const list = currentMode === 'ko' ? KO_SENTENCES : EN_SENTENCES;
+      targetEl.textContent = list[sentenceIndex % list.length];
+      resetTest();
+    }
+
+    function resetTest() {
+      if (timerInterval) clearInterval(timerInterval);
+      timerInterval = null;
+      startTime = null;
+      isFinished = false;
+      inputEl.value = '';
+      inputEl.disabled = false;
+      timerBadgeEl.textContent = '대기 중';
+      timerBadgeEl.className = 'text-xs text-slate-500 bg-slate-100 px-2.5 py-1 rounded-full font-semibold';
+
+      resCPMel.textContent = '0 타 / 분';
+      resWPMel.textContent = '0 WPM';
+      resAccel.textContent = '100.0 %';
+      resErrorel.textContent = '0 자';
+      resStrokesel.textContent = '0 타';
+      resTimeel.textContent = '0.0 초';
+      resLevelEl.textContent = '타이핑을 시작하면 실시간 측정됩니다.';
+    }
+
+    function updateStats() {
+      if (!startTime || isFinished) return;
+
+      const now = Date.now();
+      const elapsedSec = (now - startTime) / 1000;
+      if (elapsedSec <= 0) return;
+
+      resTimeel.textContent = elapsedSec.toFixed(1) + ' 초';
+
+      const targetText = targetEl.textContent;
+      const userText = inputEl.value;
+
+      // 1. 타수 계산
+      const strokes = countKoreanStrokes(userText);
+      resStrokesel.textContent = strokes + ' 타';
+
+      // 2. CPM (타/분)
+      const cpm = Math.round((strokes / elapsedSec) * 60);
+      resCPMel.textContent = cpm.toLocaleString() + ' 타 / 분';
+
+      // 3. WPM (단어/분, 영문 5글자 기준)
+      const wpm = Math.round((userText.length / 5) / (elapsedSec / 60));
+      resWPMel.textContent = wpm.toLocaleString() + ' WPM';
+
+      // 4. 오타 수 및 정확도
+      let errors = 0;
+      const checkLen = Math.min(targetText.length, userText.length);
+      for (let i = 0; i < checkLen; i++) {
+        if (targetText[i] !== userText[i]) errors++;
+      }
+      if (userText.length > targetText.length) {
+        errors += (userText.length - targetText.length);
+      }
+      resErrorel.textContent = errors + ' 자';
+
+      const totalChars = Math.max(1, userText.length);
+      const acc = Math.max(0, ((totalChars - errors) / totalChars) * 100);
+      resAccel.textContent = acc.toFixed(1) + ' %';
+
+      // 5. 등급 판정
+      if (cpm >= 800) resLevelEl.textContent = '🏆 신급 (전문 속기사 수준의 초인적 속도)';
+      else if (cpm >= 500) resLevelEl.textContent = '✨ 전문가급 (매우 유창하고 빠른 집필 속도)';
+      else if (cpm >= 350) resLevelEl.textContent = '👍 능숙함 (사무 실무 및 일상 타이핑 상위권)';
+      else if (cpm >= 200) resLevelEl.textContent = '👌 보통 (원활한 메신저 및 기본 입력 가능)';
+      else resLevelEl.textContent = '🌱 연습 필요 (자리 연습을 통해 속도를 올려보세요)';
+
+      // 문장 완독 체크
+      if (userText.length >= targetText.length && userText === targetText) {
+        finishTest();
+      }
+    }
+
+    function finishTest() {
+      isFinished = true;
+      if (timerInterval) clearInterval(timerInterval);
+      timerBadgeEl.textContent = '검정 완료';
+      timerBadgeEl.className = 'text-xs text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full font-semibold';
+      inputEl.disabled = true;
+      updateStats();
+    }
+
+    // Input 이벤트
+    inputEl.addEventListener('input', () => {
+      if (!startTime && inputEl.value.length > 0) {
+        startTime = Date.now();
+        timerBadgeEl.textContent = '측정 중...';
+        timerBadgeEl.className = 'text-xs text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-full font-semibold animate-pulse';
+        timerInterval = setInterval(updateStats, 100);
+      }
+      updateStats();
+    });
+
+    // 버튼 이벤트
+    document.getElementById('resetBtn').addEventListener('click', resetTest);
+    document.getElementById('finishBtn').addEventListener('click', finishTest);
+
+    document.getElementById('nextSentenceBtn').addEventListener('click', () => {
+      sentenceIndex++;
+      loadSentence();
+    });
+
+    document.getElementById('langKoBtn').addEventListener('click', () => {
+      currentMode = 'ko';
+      document.getElementById('langKoBtn').className = 'px-2.5 py-1 text-xs rounded-full font-bold bg-indigo-50 text-indigo-600 border border-indigo-200';
+      document.getElementById('langEnBtn').className = 'px-2.5 py-1 text-xs rounded-full font-bold bg-slate-100 text-slate-600 border border-slate-200';
+      sentenceIndex = 0;
+      loadSentence();
+    });
+
+    document.getElementById('langEnBtn').addEventListener('click', () => {
+      currentMode = 'en';
+      document.getElementById('langEnBtn').className = 'px-2.5 py-1 text-xs rounded-full font-bold bg-indigo-50 text-indigo-600 border border-indigo-200';
+      document.getElementById('langKoBtn').className = 'px-2.5 py-1 text-xs rounded-full font-bold bg-slate-100 text-slate-600 border border-slate-200';
+      sentenceIndex = 0;
+      loadSentence();
+    });
+
+    // Initialize
+    loadSentence();
   </script>
 
-  <!-- Preemptive UX Helper: Auto comma formatting & Result sharing -->
+  <!-- Preemptive UX Helper: Non-destructive Auto comma formatting & Result sharing -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // Auto comma on number/text inputs with currency hints
-      const moneyInputs = document.querySelectorAll('input[type="text"], input[type="number"], input[inputmode="numeric"]');
-      moneyInputs.forEach(input => {
-        // Skip specific inputs like year, month, date, percent, id
-        const name = (input.name || input.id || '').toLowerCase();
-        if (name.includes('year') || name.includes('month') || name.includes('day') || name.includes('rate') || name.includes('percent') || name.includes('age') || name.includes('score')) {
-          return;
-        }
-        
-        // Listen to input
-        input.addEventListener('input', function(e) {
-          if (this.type === 'number') return; // native number handles own UI
-          let val = this.value.replace(/[^0-9]/g, '');
-          if (val) {
-            this.value = Number(val).toLocaleString('ko-KR');
-          }
-        });
-      });
+      // Inject Global Result Copy Function
+      window.copyResultToClipboard = function() {
+        const cpm = document.getElementById('resCPM');
+        const wpm = document.getElementById('resWPM');
+        const acc = document.getElementById('resAccuracy');
+        const time = document.getElementById('resElapsedTime');
+        const level = document.getElementById('resSpeedLevel');
 
-      // Inject Global Result Copy Function if not exists
-      window.copyResultToClipboard = function(textToCopy, customBtn) {
-        if (!textToCopy) {
-          const resEl = document.querySelector('#result, .result-box, [id*="result"], [class*="result"]');
-          textToCopy = resEl ? resEl.innerText.trim() : window.location.href;
+        const textToCopy = `[타자 속도 실시간 측정 결과]
+` +
+          `- 분당 타수: ${cpm ? cpm.textContent : ''}
+` +
+          `- 영문 WPM: ${wpm ? wpm.textContent : ''}
+` +
+          `- 정확도: ${acc ? acc.textContent : ''}
+` +
+          `- 소요 시간: ${time ? time.textContent : ''}
+` +
+          `- 등급 평가: ${level ? level.textContent : ''}
+
+` +
+          `👉 내 타자 속도 측정하기: ${window.location.href}`;
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(textToCopy).then(() => {
+            showToastNotification('타자 성적표가 클립보드에 복사되었습니다!');
+          }).catch(() => {
+            fallbackCopyText(textToCopy);
+          });
+        } else {
+          fallbackCopyText(textToCopy);
         }
-        navigator.clipboard.writeText(textToCopy + "\n\n👉 계산기 바로가기: " + window.location.href).then(() => {
-          showToastNotification('계산 결과가 클립보드에 복사되었습니다!');
-        }).catch(() => {
-          showToastNotification('복사되었습니다: ' + window.location.href);
-        });
       };
+
+      function fallbackCopyText(text) {
+        try {
+          const textArea = document.createElement('textarea');
+          textArea.value = text;
+          textArea.style.position = 'fixed';
+          textArea.style.left = '-9999px';
+          document.body.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+          const successful = document.execCommand('copy');
+          document.body.removeChild(textArea);
+          if (successful) {
+            showToastNotification('타자 성적표가 복사되었습니다!');
+          } else {
+            showToastNotification('복사에 실패했습니다.');
+          }
+        } catch (err) {
+          showToastNotification('복사에 실패했습니다.');
+        }
+      }
 
       function showToastNotification(msg) {
         let toast = document.getElementById('global-ux-toast');
