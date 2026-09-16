@@ -3,21 +3,57 @@
 <html lang="ko">
 <head>
 <link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/><script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "한글·영문 분당 타자 속도(타수/WPM) 측정기 | 실시간 타자 연습",
-    "description": "한글 초성/중성/종성 음소 분해 타수(CPM) 및 영문 단어(WPM) 실시간 측정. 정확도, 오타율, 소요시간 정밀 분석 무료 타자 검정기.",
-    "url": "https://typing-speed-test.enjoy-onepage.com/",
-    "applicationCategory": "UtilitiesApplication",
-    "operatingSystem": "All",
-    "browserRequirements": "Requires JavaScript. Requires HTML5.",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "KRW"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://typing-speed-test.enjoy-onepage.com/#webapp",
+      "name": "한글·영문 분당 타자 속도(타수/WPM) 실시간 검정기",
+      "url": "https://typing-speed-test.enjoy-onepage.com/",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "description": "한글 분당 타수(CPM)와 영문 WPM, 정확도(%)를 실시간 정밀 측정하세요. 명문장 타이핑과 오타 분석 리포트 제공.",
+      "image": "https://typing-speed-test.enjoy-onepage.com/og-image.png",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "KRW"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://typing-speed-test.enjoy-onepage.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "한글 타수 300타, 500타, 700타의 수준은 어느 정도인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "300타는 일반 직무 일상 업무 수준, 500타는 상위 10%의 능숙한 문서 작성자, 700타 이상은 전문 타이피스트나 속기사 수준입니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "기계식 키보드가 멤브레인보다 타수가 더 잘 나오나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "빠른 입력 피드백과 무한 동시입력(N-Key Rollover)을 지원하는 적축/갈축 기계식 키보드가 손가락 피로도가 낮아 장시간 타이핑 시 타수 유지에 유리합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "오타를 줄이는 가장 좋은 훈련법은?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "타수 욕심을 버리고 메트로놈 박자에 맞춰 1초에 3~4글자씩 일정한 리듬으로 오타율 0%를 목표로 치는 '리듬 타이핑'이 가장 효과적입니다."
+          }
+        }
+      ]
     }
-  }
+  ]
+}
   </script>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
